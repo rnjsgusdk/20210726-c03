@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/*리셋시작*/
+* {
+  color: #333;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+a:link {
+  color: #444;
+}
+
+a:visited {
+  color: #444;
+}
+
+a:hover {
+  color: #555;
+}
+
+a:active {
+  color: #555;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex-container {
+  display: flex;
+}
+/*리셋끝*/
+
+/* 가이드선 시작*/
+div#warp {
+  border: 1px solid #000;
+}
+
+header#header {
+  border: 1px solid #000;
+}
+
+main#main {
+  border: 1px solid #000;
+}
+
+div#slide {
+  border: 1px solid #000;
+}
+
+div#contents {
+  border: 1px solid #000;
+}
+
+footer#footer {
+  border: 1px solid #000;
+}
+/*가이드선 끝  */
+
+/* div#warp 시작*/
+div#warp {
+  width: 1000px;
+  margin: 10px;
+}
+/* div#warp끝 */
+
+/* header#header 시작*/
+header#header {
+  width: 200px;
+}
+
+/*nav#gnb시작  */
+/*nav#gnb {
+  border: 1px solid #000;
+}*/
+
+#gnb > ul#mainmenu {
+  padding: 10px;
+  /*border: 1px solid #08f;*/
+  margin: 10px;
+  /*120연계됌*/
+  position: relative;
+}
+
+#gnb #mianmenu > li {
+  text-align: center;
+  /*border: 1px solid #f80;*/
+}
+
+#gnb a {
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #aaa;
+  display: inline-block;
+}
+
+#gnb .mainli > a {
+  /*메인메뉴와 버스메뉴 구분*/
+  height: 50px;
+  font-size: 17px;
+  line-height: 50;
+}
+
+#gnb ul.submenu {
+  display: none;
+  position: absolute;
+  left: 163px;
+  top: 0px;
+}
+
+#gnb ul.submenu li:last-child a {
+  padding-bottom: 160px;
+}
+
+#gnb.mainli > a:hover {
+  color: #fff;
+  background-color: rgba(0, 128, 255, 0.8);
+}
+
+#gnb .subli a {
+  color: #fff;
+  background-color: rgba(0, 128, 255, 0.6);
+}
+
+#gnb .subli > a:hover {
+  color: #444;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*nav#gnb끝  */
+
+/* header#header 끝*/
+
+/*main#main 시작  */
+main#main {
+  flex: 1;
+}
+/* main#main끝 */
+
+/*div#slide시작  */
+div#slide {
+  width: 800px;
+}
+/*div#slide끝  */
+
+/*div#contents 시작  */
+div#contents {
+  height: 200px;
+}
+
+#main #contents > * {
+  flex: 1;
+}
+/* div#contents 끝 */
+
+#main footer#footer {
+  height: 100px;
+}
